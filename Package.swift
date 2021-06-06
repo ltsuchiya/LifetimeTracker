@@ -12,7 +12,7 @@ let package = Package(
         .target(name: "LifetimeTracker",
                 path: "Sources",
                 resources: [
-            .process("iOS/UI/BarDashboard/BarDashboard.storyboard")
+            .process("Resources")
         ])
     ]
 )
