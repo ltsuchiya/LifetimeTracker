@@ -48,7 +48,7 @@ class CircularDashboardViewController: UIViewController, LifetimeTrackerViewable
     }
 
     class func makeFromNib() -> UIViewController & LifetimeTrackerViewable {
-        let storyboard = UIStoryboard(name: Constants.Storyboard.circularDashboard.name, bundle: nil)
+        let storyboard = UIStoryboard(name: Constants.Storyboard.circularDashboard.name, bundle: Bundle.module)
         return storyboard.instantiateViewController(withIdentifier: String(describing: self)) as! CircularDashboardViewController
     }
 
